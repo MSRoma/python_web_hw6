@@ -41,10 +41,10 @@ CREATE TABLE subjects (
 DROP TABLE IF EXISTS grades;
 CREATE TABLE grades (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    grades VARCHAR(255) UNIQUE NOT NULL,
+    grades INTEGER,
     student_id INTEGER,
     subject_id INTEGER,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at DATE DEFAULT '2020-01-01',
     FOREIGN KEY (student_id) REFERENCES students (id)
       ON DELETE CASCADE
       ON UPDATE CASCADE
