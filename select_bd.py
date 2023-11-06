@@ -14,4 +14,5 @@ def execute_query(sql: str) -> list:
         return print(result)
     
 if __name__ == "__main__":
-    execute_query("query_number1.sql")
+    #execute_query("query_1.sql")
+    execute_query("query_2.sql")
